@@ -26,10 +26,8 @@ iris=sns.load_dataset('iris')
 # sns.displot(titanic[titanic['Survived']==0]['Age'], )
 # sns.displot(titanic[titanic['Survived']==1]['Age'],)
 
-
+# print(iris.head())
 sns.heatmap(pd.crosstab(titanic['Pclass'], titanic['Survived']))
 # titanic.groupby('Pclass').mean()['Survived'] * 100 to calculate percentage 
-
-sns.pairplot(iris)
 
 plt.show()
